@@ -51,12 +51,27 @@ export default function Home() {
         
         
       </div>
-      <div className=" flex items-center justify-center flex-col">
-        <div className=" flex justify-center font-Roboto_Condensed text-7xl">Meet our Clients</div>
+
+
+      <div className=" flex items-center justify-center flex-col my-32">
+        <div className=" flex justify-center font-Roboto_Condensed text-8xl">Meet our Clients</div>
         <div className="flex justify-center w-[60%] text-center text-md p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quia velit odit delectus esse distinctio dignissimos ex ratione sit voluptatem mollitia aut impedit voluptate, blanditiis quas minus similique libero omnis!</div>
         <div className="p-8">
-          <Image src={im2} alt="" className="max-h-[800px] bg-gradient-to-t from-g3 via-g2 to-g1 rounded-[36px]"></Image>
+          <Image src={im2} alt="" className="max-h-[800px] bg-gradient-to-t from-g4 via-g2 to-g5 rounded-[36px]"></Image>
         </div>
+      </div>
+
+      <div className=" flex items-center justify-center flex-col my-32">
+        <div className="flex justify-center font-Roboto_Condensed text-8xl w-[50%] text-center p-4">
+          Brands we have worked with
+        </div>
+        <div>
+        And way more – we’re adding new ones all the time.
+        </div>
+        <div>
+          
+        </div>
+
       </div>
       
     </div>

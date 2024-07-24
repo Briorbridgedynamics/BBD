@@ -33,7 +33,7 @@ export const Navbar = () => {
   return (
     <div
       className={`flex flex-row h-auto 
-        ${s ? "bg-transparent text-primary" : "bg-primary-t text-black"}
+        ${s ? "bg-transparent text-primary" : "bg-primary-t text-dark"}
         items-center text-[#60ACF9] p-6 ${
           showNavbar ? "translate-y-0" : "hidden"
         }
@@ -58,10 +58,10 @@ export const Navbar = () => {
         </div>
       </div>
 
-      <div className="items-center absolute right-8  m-2 w-auto border-2 border-high align-left rounded-[32px] p-2 bg-primary">
+      <div className={`items-center absolute right-8  m-2 w-auto border-2 border-high align-left rounded-[32px] p-2 bg-primary  ${s ? "bg-primary" : "bg-dark"}`}>
         <Link
           href={"#"}
-          className="flex flex-row items-center text-dark text-lg font-Roboto_Condensed"
+          className={`flex flex-row items-center text-dark text-lg font-Roboto_Condensed  ${s ? "text-dark" : "text-primary"}`}
         >
           <div>LET'S TALK</div>
         </Link>
