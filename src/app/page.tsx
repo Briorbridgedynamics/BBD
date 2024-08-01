@@ -1,22 +1,24 @@
 import Image from "next/image";
-import im from "@/../../public/image.png"
+import im from "@/../../public/UT.png"
 import x from "@/../../public/vercel.svg"
 import im2 from "@/../../public/image2.webp"
 import Link from "next/link";
+import {Slider1} from "@/components/slider1"
+import {Slider2} from "@/components/slider2"
 
 export default function Home() {
   return (
-    <div className="w-ful h-auto">
-      <div className="h-auto bg-gradient-to-t from-g3 via-g2 to-g1 pt-16 ">
-        <div className=" justify-center flex flex-col items-center  text-primary ">
-          <div className="text-[180px] font-bold font-Roboto_Condensed">YOU DREAM</div>
-          <div className="text-[180px] font-bold font-Roboto_Condensed">WE ACCOMPLISH</div>
+    <div className="w-full h-auto">
+      <div className="h-auto bg-gradient-to-t from-primary via-g3 via-g2 to-g1  pt-16 ">
+        <div className=" justify-center flex flex-col items-center  text-primary  ">
+          <div className="text-[180px] font-bold font-Roboto_Condensed m-0 p-0 h-[170px]">YOU DREAM</div>
+          <div className="text-[180px] font-bold font-Roboto_Condensed m-0 p-0">WE ACCOMPLISH</div>
           <div className="text-[20px] max-w-[60%] text-center">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta illum, corrupti delectus amet non ratione! Nam molestias iure dolore rem.
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta 
           </div>
           <div className="py-12">
-            <Image src={im} alt="" className="h-auto w-auto "></Image>
+            <Image src={im} alt="" className=" relative h-[950px] w-auto "></Image>
           </div>
         </div>
       </div>
@@ -61,18 +63,24 @@ export default function Home() {
         </div>
       </div>
 
-      <div className=" flex items-center justify-center flex-col my-32">
-        <div className="flex justify-center font-Roboto_Condensed text-8xl w-[50%] text-center p-4">
+      <div className=" flex items-center justify-center flex-col my-32 overflow-hidden bg-gradient-to-t from-primary via-lightb via-lightb to-primary">
+        <div className="flex justify-center font-Roboto_Condensed text-8xl w-[50%] text-center ">
           Brands we have worked with
         </div>
-        <div>
+        <div className="p-2">
         And way more – we’re adding new ones all the time.
+        </div>
+        <div className="mt-16 ">
+        <Slider1></Slider1>
+        <Slider2></Slider2>
         </div>
         <div>
           
         </div>
+        
 
       </div>
+      
       
     </div>
   );
