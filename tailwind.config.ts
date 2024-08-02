@@ -32,7 +32,7 @@ const config: Config = {
       },
       colors: {
         'background':'#00000',
-        'dark':'#180000',
+        'dark':'#1a0001',
         "primary":"#fff8fd",
         "primary-t":"rgba(255,248,253,0.9)",
         'g1':'#21bb4d',
@@ -40,7 +40,10 @@ const config: Config = {
         'g3':'#7db4f4',
         'g4':'#e8b4f5',
         'g5':'#fcc254',
-        'lightb':'#ffe9e5'
+        'g6':'#e4d2e0',
+        'lightb':'#ffe9e5',
+        'br':'#1a0001',
+        'card':'#ffe8e0'
 
       },
       fontFamily:{

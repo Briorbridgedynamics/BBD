@@ -5,6 +5,8 @@ import im2 from "@/../../public/image2.webp"
 import Link from "next/link";
 import {Slider1} from "@/components/slider1"
 import {Slider2} from "@/components/slider2"
+import { Services } from "@/components/services";
+import { Promises } from "@/components/promise";
 
 export default function Home() {
   return (
@@ -74,11 +76,13 @@ export default function Home() {
         <Slider1></Slider1>
         <Slider2></Slider2>
         </div>
-        <div>
-          
-        </div>
+        
         
 
+      </div>
+      <div className="pt-16">
+      <Services></Services>
+      <Promises></Promises>
       </div>
       
       
