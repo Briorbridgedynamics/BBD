@@ -43,7 +43,8 @@ const config: Config = {
         'g6':'#e4d2e0',
         'lightb':'#ffe9e5',
         'br':'#1a0001',
-        'card':'#ffe8e0'
+        'card':'#ffe8e0',
+        'footer':'#98bbf3'
 
       },
       fontFamily:{
