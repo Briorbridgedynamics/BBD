@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -58,14 +59,18 @@ export const Navbar = () => {
         </div>
       </div>
 
-      <div className={`items-center absolute right-8  m-2 w-auto border-2 border-high align-left rounded-[32px] p-2   ${s ? "bg-primary" : "bg-dark"}`}>
+      <motion.div className={`items-center absolute right-8  m-2 w-auto border-2 border-high align-left rounded-[32px] p-2   ${s ? "bg-primary" : "bg-dark"}`}
+      onClick={()=>{
+        
+      }}
+      >
         <Link
           href={"#"}
           className={`flex flex-row items-center text-dark text-lg font-Roboto_Condensed  ${s ? "text-dark" : "text-primary"}`}
         >
           <div>LET'S TALK</div>
         </Link>
-      </div>
+      </motion.div>
       <div className="items-center absolute  left-[43%]   ">
         <div className="flex text-3xl font-Open_Sans font-bold">BBDYNAMICS</div>
         
