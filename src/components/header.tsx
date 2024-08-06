@@ -3,10 +3,11 @@ import React from "react";
 import Image from "next/image";
 import im from "@/../../public/UT.png";
 import { motion } from "framer-motion";
+import background from "@/../../public/video/background.mp4";
 
 export const Header = () => {
   return (
-    <div className=" justify-center flex flex-col items-center  text-primary  ">
+    <div className=" justify-center flex flex-col items-center  text-primary  h-[100vh]">
       <motion.div
         initial={{
           opacity: 0,
@@ -16,7 +17,7 @@ export const Header = () => {
         whileInView={{
           opacity: 1,
           x: 0,
-          y: 0, // Slide in to its original position
+          y: -40, // Slide in to its original position
           transition: {
             // type: "spring",
             stiffness: 200,
@@ -46,9 +47,9 @@ export const Header = () => {
         Your next Gen partner in digital transformation & We craft innovative
         marketing solutions to elevate your brand.
       </motion.div>
-      <div className="py-12">
+      {/* <div className="py-12">
         <Image src={im} alt="" className=" relative h-[950px] w-auto "></Image>
-      </div>
+      </div> */}
     </div>
   );
 };
