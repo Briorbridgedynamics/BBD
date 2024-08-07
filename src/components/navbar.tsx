@@ -65,7 +65,7 @@ export const Navbar = () => {
       }}
       >
         <Link
-          href={"#"}
+          href={"/contact"}
           className={`flex flex-row items-center text-dark text-lg font-Roboto_Condensed  ${s ? "text-dark" : "text-primary"}`}
         >
           <div>LET'S TALK</div>

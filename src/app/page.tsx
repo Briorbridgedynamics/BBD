@@ -1,5 +1,4 @@
 import Image from "next/image";
-import bg from "@/../../public/bg.png";
 import Link from "next/link";
 import { Slider1 } from "@/components/slider1";
 import { Slider2 } from "@/components/slider2";
@@ -9,34 +8,17 @@ import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { Left } from "@/components/left";
 import { Right } from "@/components/right";
+import { Clients } from "@/components/clients";
 
 export default function Home() {
   return (
     <div className="w-full h-auto overflow-hidden snap-y">
-        <div className="h-auto bg-gradient-to-t from-primary via-g3 via-g2 to-g1  pt-16 ">
+        <div className="h-auto   ">
           <Header></Header>
         </div>
         <Left></Left>
         <Right></Right>
-         
-      <div className=" flex items-center justify-center flex-col my-32">
-        <div className=" flex justify-center font-Roboto_Condensed text-8xl">
-          Meet our Clients
-        </div>
-        <div className="flex justify-center w-[60%] text-center text-md p-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quia
-          velit odit delectus esse distinctio dignissimos ex ratione sit
-          voluptatem mollitia aut impedit voluptate, blanditiis quas minus
-          similique libero omnis!
-        </div>
-        <div className="p-8">
-          <Image
-            src={bg}
-            alt=""
-            className="max-h-[800px] bg-gradient-to-t from-g4 via-g2 to-g5 rounded-[36px]"
-          ></Image>
-        </div>
-      </div>
+        <Clients> </Clients>
 
       <div className=" flex items-center justify-center flex-col my-32 overflow-hidden bg-gradient-to-t from-primary via-lightb via-lightb to-primary">
         <div className="flex justify-center font-Roboto_Condensed text-8xl w-[50%] text-center ">
