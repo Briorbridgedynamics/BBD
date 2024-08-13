@@ -18,7 +18,7 @@ import service from "@/utils/serv";
 export const Services = () => {
   return (
     <div className="flex flex-col  h-auto bg-dark rounded-t-[80px] font-Roboto_Condensed ">
-      <div className="py-16 flex items-center text-transparent w-[100%] text-[180px] font-bold justify-center text-center bg-clip-text bg-gradient-to-t from-g4 to-g5">
+      <div className="py-12 flex items-center text-transparent w-[100%] text-[140px] font-bold justify-center text-center bg-clip-text bg-gradient-to-t from-g4 to-g5">
         SERVICE'S WE
         <br></br>
         OFFER

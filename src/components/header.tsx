@@ -54,7 +54,7 @@ export const Header = () => {
         }}
         className="text-[20px] max-w-[100%] text-center"
       >
-        Your next Gen partner in digital transformation & We craft innovative
+        Your next Gen partner in digital transformation & 
         marketing solutions to elevate your brand.
       </motion.div>
       </div>
