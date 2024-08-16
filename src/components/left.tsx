@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import about1 from "@/../../public/newAbout.png";
 import Typewriter from "typewriter-effect";
-
+import banner from "@/../../public/banner.jpg";
 export const Left = () => {
   return (
     <div className="flex flex-row h-screen items-center justify-between mt-32">
@@ -115,10 +115,7 @@ export const Left = () => {
           }}
           viewport={{ once: false, amount: "some" }}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-          aliquid laborum obcaecati itaque ea saepe vitae sint fuga eum
-          consequuntur, quasi officiis distinctio repellat deleniti sequi iste
-          similique porro atque.
+          A Digital Marketing Company like Brior Bridge Dynamics can help clients in variety of ways, depending on thier specific needs and goals. Here are some key ways in which we can assist companies like building an online presence, Driving targeted traffic, Boosting Brand Awareness, Providing data driven Insights.
         </motion.div>
         <motion.div
           initial={{
@@ -158,16 +155,16 @@ export const Left = () => {
           y: 0, // Slide in to its original position
           transition: {
             duration: 0.8,
-            delay: 1, // Animation duration
+            delay: 0.9, // Animation duration
           },
         }}
         viewport={{ once: false, amount: "some" }}
         className="  flex w-[55%]  h-[100%] justify-center  "
       >
         <Image
-          src={about1}
+          src={banner}
           alt="x"
-          className="bg-gradient-to-t from-g5 via-g4 to-g3 h-[100%] w-[80%] rounded-[36px] "
+          className="flex my-auto bg-gradient-to-t from-g5 via-g4 to-g3 h-[100%] w-[70%] rounded-[50px] object-cover max-h-[750px]"
         ></Image>
       </motion.div>
     </div>

@@ -52,7 +52,7 @@ export const Services = () => {
                 <div className="text-dark font-bold text-[40px] text-center ">
                   {example.title}
                 </div>
-                <div className="text-dark font-bold text-md text-center p-2 ">
+                <div className="text-dark font-bold text-md p-2  max-w-[500px] flex mx-auto text-center justify-center">
                   {example.body}
                 </div>
                 <div

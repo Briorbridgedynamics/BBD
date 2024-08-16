@@ -12,11 +12,12 @@ export const Clients = () => {
         <div className=" flex justify-center font-Roboto_Condensed text-8xl">
           Meet our Clients
         </div>
-        <div className="flex justify-center w-[60%] text-center text-md p-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quia
-          velit odit delectus esse distinctio dignissimos ex ratione sit
-          voluptatem mollitia aut impedit voluptate, blanditiis quas minus
-          similique libero omnis!
+        <div className=" justify-center w-[60%] text-center text-md p-4">
+          At Brior Bridge Dynamics, we are pround to partner with diverse range of clients across various industries. Each client bring's us unique challenges and opportunity to craft innovative solutions to achieve greater heights.
+          <br />
+          <div className="font-bold text-xl p-4">
+           Come and Join us ! 
+            </div>  
         </div>
         <motion.div
         initial={{

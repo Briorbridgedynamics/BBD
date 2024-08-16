@@ -1,5 +1,6 @@
 import Image from "next/image";
-import React, { useRef, useState } from "react";
+
+import React from "react";
 import Link from "next/link";
 import { Slider1 } from "@/components/slider1";
 import "swiper/css";
@@ -25,13 +26,18 @@ import meta from "@/../../public/email.webp";
 import { Testimonials } from "@/components/testimonials";
 
 export default function Home() {
+  
   return (
     <div className="w-full h-auto overflow-hidden snap-y">
       <div className="h-auto   ">
         <Header></Header>
       </div>
       <Left></Left>
-      <Right></Right>
+      <section id="2">
+
+      <Right ></Right>
+      </section>
+      
       <Clients> </Clients>
 
       <div className=" flex items-center justify-center flex-col my-32 overflow-hidden bg-gradient-to-t from-primary via-lightb via-lightb to-primary">

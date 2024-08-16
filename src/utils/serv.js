@@ -12,61 +12,61 @@ var service = [
 
     {
         title:"Digital Marketing",
-        body:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, debitis.",
+        body:"Digital marketing is not the art of selling a product. It is the art of making people buy the product that you sell and We master at this art.",
         image: DM
         
     },
     {
         title:"Application Development",
-        body:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, debitis.",
+        body:" Capture and retain customer with your own personalized Application developed by our Team.",
         image: AD
         
     },
     {
         title:"Website Designing",
-        body:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, debitis.",
+        body:"Developing, Calibrating your website for an eye catching and innovative makeover.",
         image: WD
         
     },
     {
         title:"Search Engine Optimization",
-        body:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, debitis.",
+        body:"Jump up the ranks with out next gen Optimiztions.",
         image: SEO
         
     },
     {
         title:"Whatsapp Marketing",
-        body:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, debitis.",
+        body:"Let us help you provide your potential customer's information about your latest release via the path of Whatsapp.",
         image: WP
         
     },
     {
         title:"Email Marketing",
-        body:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, debitis.",
+        body:"Unlock the potential world of Emails Marketing with us - Increase your viewership via Email. ",
         image: E
         
     },
     {
         title:"Google Advertisement",
-        body:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, debitis.",
+        body:"Reach millions of potential customers through targeted online advertising with Google Ads.",
         image: GA
         
     },
     {
         title:"Meta Advertisement",
-        body:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, debitis.",
+        body:"Let us help you connect with your target audience and drive engagement through powerful Meta advertising solutions.",
         image: MA
         
     },
     {
         title:"Google Business",
-        body:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, debitis.",
+        body:"Helping to Boost your local business visibility and customer engagement on Google Business Profile.",
         image: GB
         
     },
     {
         title:"Content Management",
-        body:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, debitis.",
+        body:"Managing Content requires industry Knowledge and precise strategies, Let our professional team take care of this.",
         image: CM
         
     },

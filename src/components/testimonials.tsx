@@ -35,15 +35,24 @@ export const Testimonials = () => {
           //   delay: 1500,
           //   disableOnInteraction: false,
           // }}
+          navigation={
+            {
+              enabled:true
+            }
+          }
           coverflowEffect={{
             rotate: 0,
             stretch: 0,
             depth: 100,
             modifier: 2,
             slideShadows: false,
+            
           }}
-          pagination={true}
-          modules={[EffectCoverflow, Pagination]}
+          pagination={{
+            enabled:true
+          }}
+         
+          modules={[EffectCoverflow, Pagination,Navigation]}
           className="mySwiper h-[320px] w-[100%]"
           slideActiveClass="filter-none"
         >

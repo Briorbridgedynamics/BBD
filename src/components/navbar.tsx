@@ -47,33 +47,35 @@ export const Navbar = () => {
           </Link>
         </div>
         <div>
-          <Link href="/about" className=" h-[36px] px-4">
+          <Link href="#2" className=" h-[36px] px-4">
             ABOUT US
           </Link>
         </div>
 
         <div>
-          <Link href={"/blogs"} className=" h-[36px] px-4 ">
+          <Link href={"/"} className=" h-[36px] px-4 ">
             BLOGS
           </Link>
         </div>
       </div>
 
-      <motion.div className={`items-center absolute right-8  m-2 w-auto border-2 border-high align-left rounded-[32px] p-2   ${s ? "bg-primary" : "bg-dark"}`}
-      onClick={()=>{
-        
-      }}
+      <motion.div
+        className={`items-center absolute right-8  m-2 w-auto border-2 border-high align-left rounded-[32px] p-2   ${
+          s ? "bg-primary" : "bg-dark"
+        }`}
+        onClick={() => {}}
       >
         <Link
           href={"/contact"}
-          className={`flex flex-row items-center text-dark text-lg font-Roboto_Condensed  ${s ? "text-dark" : "text-primary"}`}
+          className={`flex flex-row items-center text-dark text-lg font-Roboto_Condensed  ${
+            s ? "text-dark" : "text-primary"
+          }`}
         >
           <div>LET'S TALK</div>
         </Link>
       </motion.div>
       <div className="items-center absolute  left-[43%]   ">
         <div className="flex text-3xl font-Open_Sans font-bold">BBDYNAMICS</div>
-        
       </div>
     </div>
   );
