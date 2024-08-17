@@ -108,7 +108,7 @@ export const Right = () => {
           className="my-8"
         >
           <Link
-            href="#"
+            href="/contact"
             className="rounded-[36px] bg-dark text-primary  font-Roboto_Condensed p-4 my-4 "
           >
             Let's Talk

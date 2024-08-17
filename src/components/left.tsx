@@ -83,13 +83,13 @@ export const Left = () => {
             transition: {
               stiffness: 200,
               duration: 1,
-              delay:0.8 // Animation duration
+              // delay:0.8 // Animation duration
             },
           }}
           >
           <Typewriter
             options={{
-              strings: ["Let's Scale...","Drive Growth..."],
+              strings: ["","Let's Scale...","Drive Growth..."],
               autoStart: true,
               loop: true,
             }}
@@ -136,7 +136,7 @@ export const Left = () => {
           className="my-8"
         >
           <Link
-            href="#"
+            href="/contact"
             className="rounded-[36px] bg-dark text-primary  font-Roboto_Condensed p-4 my-4 "
           >
             Let's Talk

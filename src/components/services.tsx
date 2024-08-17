@@ -60,7 +60,7 @@ export const Services = () => {
           "
                 >
                   <Link
-                    href={"#"}
+                    href={"/contact"}
                     className={`items-center flex flex-row justify-center text-dark text-lg font-Roboto_Condensed  text-primary  bg-dark max-w-[150px] min-h-[60px]  rounded-[32px] mx-auto font-bold
               `}
                   >
