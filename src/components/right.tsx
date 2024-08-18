@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import x from "@/../../public/vercel.svg";
 import Typewriter from "typewriter-effect";
+import {os, robot,sofia} from "@/utils/fonts";
+
 
 export const Right = () => {
   return (
@@ -54,7 +56,7 @@ export const Right = () => {
             },
           }}
           viewport={{ once: false, amount: "some" }}
-          className="text-6xl max-w-[80%] py-6 font-Roboto_Condensed"
+          className={`text-6xl max-w-[80%] py-6 font-Roboto_Condensed font-bold ${robot}`}
         >
           <Typewriter
             options={{
@@ -109,7 +111,7 @@ export const Right = () => {
         >
           <Link
             href="/contact"
-            className="rounded-[36px] bg-dark text-primary  font-Roboto_Condensed p-4 my-4 "
+            className={`rounded-[36px] bg-dark text-primary  font-Roboto_Condensed p-4 my-4 ${robot}`}
           >
             Let's Talk
           </Link>

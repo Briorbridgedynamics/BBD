@@ -7,11 +7,13 @@ import Link from "next/link";
 import about1 from "@/../../public/newAbout.png";
 import Typewriter from "typewriter-effect";
 import banner from "@/../../public/banner.jpg";
+import {os, robot,sofia} from "@/utils/fonts";
+
 export const Left = () => {
   return (
     <div className="flex flex-row h-screen items-center justify-between mt-32">
       <div className="w-[45%] h-[100%] flex flex-col p-32  justify-center">
-        <div className="text-6xl max-w-[100%] py-6 font-Roboto_Condensed font-bold ">
+        <div className={`text-6xl max-w-[100%] py-6 font-Roboto_Condensed font-bold ${robot}`}>
           <motion.div
             initial={{
               opacity: 0,
@@ -137,7 +139,7 @@ export const Left = () => {
         >
           <Link
             href="/contact"
-            className="rounded-[36px] bg-dark text-primary  font-Roboto_Condensed p-4 my-4 "
+            className={`rounded-[36px] bg-dark text-primary  font-Roboto_Condensed p-4 my-4 ${robot}`}
           >
             Let's Talk
           </Link>

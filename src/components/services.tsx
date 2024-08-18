@@ -1,35 +1,28 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import DM from "@/../../public/DM.png";
-import AD from "@/../../public/app-development.png";
-import WD from "@/../../public/web-dev.png";
-import SEO from "@/../../public/search-engine-optimization.png";
-import E from "@/../../public/email.webp";
-import GA from "@/../../public/google-Photoroom.png";
-import CM from "@/../../public/content-management.png";
-import MA from "@/../../public/meta.png";
-import WP from "@/../../public/free-whatsapp-marketing-6744110-5559390.png";
-import GB from "@/../../public/GBB.png";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import service from "@/utils/serv";
+import {os, robot,sofia} from "@/utils/fonts";
+
 
 export const Services = () => {
   return (
     <div className="flex flex-col  h-auto bg-dark rounded-t-[80px] font-Roboto_Condensed ">
-      <div className="py-12 flex items-center text-transparent w-[100%] text-[140px] font-bold justify-center text-center bg-clip-text bg-gradient-to-t from-g4 to-g5">
+      <div className={`${robot} py-8 flex items-center text-transparent w-[100%] text-[160px] font-bold justify-center text-center bg-clip-text bg-gradient-to-t from-g4 to-g5`}>
         SERVICE'S WE
-        <br></br>
+        <br />
         OFFER
       </div>
+      
       <div className="grid sm:grid-cols-2 gap-12 m-16">
         {service.map((example: any) => {
           return (
             <div>
 
               <motion.div
-                className="min-h-[550px] w-full bg-card rounded-[42px] items-center justify-center py-8"
+                className="flex flex-col h-full w-full bg-card rounded-[42px] items-center justify-between py-8"
                 whileHover={{
                   scale: 1.02,
                   boxShadow: "0px 0px 8px #ffe9e5",
@@ -61,7 +54,7 @@ export const Services = () => {
                 >
                   <Link
                     href={"/contact"}
-                    className={`items-center flex flex-row justify-center text-dark text-lg font-Roboto_Condensed  text-primary  bg-dark max-w-[150px] min-h-[60px]  rounded-[32px] mx-auto font-bold
+                    className={`items-center flex flex-row justify-center text-dark text-lg font-Roboto_Condensed  text-primary  bg-dark w-[150px] min-h-[60px]  rounded-[32px] mx-auto font-bold ${os}
               `}
                   >
                     Explore

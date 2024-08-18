@@ -1,5 +1,4 @@
 import { transform } from "next/dist/build/swc";
-import { Open_Sans, Roboto_Condensed, Sofia_Sans_Extra_Condensed, Ultra } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -48,8 +47,8 @@ const config: Config = {
 
       },
       fontFamily:{
-        Open_Sans:['var(--os)'],
-        Roboto_Condensed:['var(--roboto_condensed)'],
+        os:['var(--os)'],
+        R:['var(--roboto_condensed)'],
         // Sofia_Sans_Extra_Condensed:['var(--sof)']
       }
     },

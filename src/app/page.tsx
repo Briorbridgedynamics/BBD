@@ -15,6 +15,8 @@ import { Header } from "@/components/header";
 import { Left } from "@/components/left";
 import { Right } from "@/components/right";
 import { Clients } from "@/components/clients";
+import {os, robot,sofia} from "@/utils/fonts";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   EffectCoverflow,
@@ -41,7 +43,7 @@ export default function Home() {
       <Clients> </Clients>
 
       <div className=" flex items-center justify-center flex-col my-32 overflow-hidden bg-gradient-to-t from-primary via-lightb via-lightb to-primary">
-        <div className="flex justify-center font-Roboto_Condensed text-8xl w-[50%] text-center ">
+        <div className={`flex justify-center font-Roboto_Condensed text-8xl w-[50%] text-center ${robot}`}>
           Brands we have worked with
         </div>
         <div className="p-2">

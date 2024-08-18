@@ -9,16 +9,12 @@ import {
   Autoplay,
   Navigation,
 } from "swiper/modules";
-import meta from "@/../../public/email.webp";
-
-import { motion } from "framer-motion";
-import service from "@/utils/serv";
-import bg from "@/../../public/bg.png";
+import {os, robot,sofia} from "@/utils/fonts";
 
 export const Testimonials = () => {
   return (
     <div className="h-auto w-full bg-gradient-to-t from-primary via-lightb via-lightb to-primary">
-      <div className="pt-16 flex items-center text-transparent w-[100%] text-[140px] font-bold justify-center text-center bg-clip-text bg-dark">
+      <div className={`pt-16 flex items-center text-transparent w-[100%] text-[140px] font-bold justify-center text-center bg-clip-text bg-dark ${robot}`}>
         TESTIMONIALS
       </div>
       <div className=" flex mx-auto items-center text-transparent w-[60%] justify-center text-center bg-clip-text bg-dark">Let's here what our customer's say about us.</div>

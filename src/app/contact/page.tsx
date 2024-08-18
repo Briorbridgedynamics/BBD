@@ -5,6 +5,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Select, { Options, StylesConfig } from "react-select";
 import load from "@/../../public/loading.gif";
+import {robot,sofia} from "@/utils/fonts";
 
 interface val {
   value: String;
@@ -118,7 +119,7 @@ export default function Home() {
         <source src="/contact.mp4" type="video/mp4" />
       </video>
       <div className=" flex absolute top-auto  h-auto min-h-[600px] w-[50%] bg-[rgba(0,0,0,0.8)] items-center flex-row  flex-col ">
-        <div className=" w-[100%] text-primary text-5xl font-bold py-8 px-8">
+        <div className= {`w-[100%] text-primary text-6xl font-bold py-8 px-16 font-R ${sofia}`}>
           Let's
           <br />
           Connect...

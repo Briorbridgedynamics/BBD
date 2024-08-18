@@ -1,27 +1,9 @@
 import type { Metadata } from "next";
-import {
-  Open_Sans,
-  Roboto_Condensed,
-  Sofia_Sans_Extra_Condensed,
-} from "next/font/google";
+
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
 
-const os = Open_Sans({
-  subsets: ["greek"],
-  weight: ["800"],
-  variable: "--os",
-});
-const robot = Roboto_Condensed({
-  subsets: ["latin"],
-  weight: ["700","900"],
-  variable: "--roboto_condensed",
-});
-const sofia = Sofia_Sans_Extra_Condensed({
-  subsets: ["latin"],
-  weight: ["900"],
-  variable: "--sof",
-});
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -35,18 +17,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* <head>
-        
-        <link
-          href="https://fonts.googleapis.com/css2?family=Ultra&display=swap"
-          rel="stylesheet"
-        />
-      </head> */}
-      <body className={(os.variable, robot.variable  )}>
+      <body>
         <div className="fixed top-0 left-0 right-0   z-50">
           <Navbar></Navbar>
         </div>
-        <main className=" bg-primary ">{children}</main>
+        <main className={" bg-primary " }>{children}</main>
       </body>
     </html>
   );

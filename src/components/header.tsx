@@ -3,6 +3,8 @@ import React from "react";
 import Image from "next/image";
 import im from "@/../../public/UT.png";
 import { motion } from "framer-motion";
+import {os, robot,sofia} from "@/utils/fonts";
+
 
 
 export const Header = () => {
@@ -35,12 +37,12 @@ export const Header = () => {
             // delay: 1.2, // Animation duration
           },
         }}
-        viewport={{ once: false, amount: "some" }}
+        viewport={{ once: true, amount: "some" }}
       >
-        <div className="text-[180px] font-bold font-Roboto_Condensed m-0 p-0 h-[170px] text-center">
+        <div className={`text-[220px] font-bold  m-0 p-0 h-[170px] text-center ${sofia}`}>
           YOU DREAM
         </div>
-        <div className="text-[180px] font-bold font-Roboto_Condensed m-0 p-0 text-center">
+        <div className={`${sofia} text-[220px] font-bold font-Roboto_Condensed m-0 p-0 text-center`}>
           WE ACCOMPLISH
         </div>
       </motion.div>
