@@ -84,7 +84,7 @@ export const Navbar = () => {
           <div className={robot}>LET'S TALK</div>
         </Link>
       </motion.div>
-      <div className=" absolute items-center w-auto lg:left-[45%]  md:left-[41%] left-[35%] ">
+      <div className="flex mx-auto md:mx-0  md:absolute items-center md:w-auto lg:left-[45%]  md:left-[41%] left-[35%] ">
         <div
           className={`flex lg:text-3xl md:text-3xl text-2xl font-bold ${robot} justify-center`}
         >

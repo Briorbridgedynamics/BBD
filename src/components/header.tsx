@@ -11,7 +11,7 @@ import Link from "next/link";
 export const Header = () => {
   return (
     <div className=" justify-center flex flex-col items-center  text-primary  h-screen">
-      <div className="absolute h-[100%] w-[100%] top-0 left-0 bg-[rgba(0,0,0,0.6)]"></div>
+      <div className="absolute h-screen w-[100%] top-0 left-0 bg-[rgba(0,0,0,0.6)]"></div>
         <video
           className="h-[100%] w-[100%] object-cover"
           loop
