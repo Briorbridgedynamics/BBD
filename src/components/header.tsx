@@ -20,7 +20,7 @@ export const Header = () => {
         >
           <source src="/background.mp4" type="video/mp4" />
         </video>
-      <div className="absolute top-[35%] text-center w-[100%] h-auto md:top-[25%] left-0">
+      <div className="absolute top-[30%] text-center w-[100%] h-auto md:top-[25%] left-0">
       <motion.div
         initial={{
           opacity: 0,
@@ -63,7 +63,7 @@ export const Header = () => {
       </div>
       <Link
           href="/contact"
-          className={`md:hidden absolute top-[80%]  items-center text-dark md:text-lg text-sm text-dark p-4 rounded-[36px] bg-primary
+          className={`md:hidden absolute top-[85%]  items-center text-dark md:text-lg text-sm text-dark p-4 rounded-[36px] bg-primary
           `}
         >
           <div className={robot}>LET'S TALK</div>

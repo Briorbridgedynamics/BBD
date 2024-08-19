@@ -10,7 +10,7 @@ import {os, robot,sofia} from "@/utils/fonts";
 
 export const Right = () => {
   return (
-    <div className="flex flex-row h-screen items-center justify-between lg:my-32 md:my-8" id="about">
+    <div className="flex flex-col md:flex-row h-screen items-center justify-between lg:my-32 md:my-8" id="about">
       <motion.div
         initial={{
           opacity: 0,
@@ -27,7 +27,7 @@ export const Right = () => {
           },
         }}
         viewport={{ once: true, amount: "some" }}
-        className=" flex w-[55%]  h-[100%] justify-center  "
+        className=" flex w-[80%] md:w-[55%] h-[60%] md:h-[100%] justify-center  "
       >
         {/* <Image
           src={x}
@@ -39,7 +39,7 @@ export const Right = () => {
           <source src="/BD.mp4" type="video/mp4" />
         </video>
       </motion.div>
-      <div className="w-[45%] h-[100%] flex flex-col lg:p-32  justify-center md:p-6">
+      <div className="w-[80%] md:w-[45%] h-[100%] flex flex-col lg:p-32 py-6 justify-center md:p-6">
         <motion.div
           initial={{
             opacity: 0,
@@ -56,7 +56,7 @@ export const Right = () => {
             },
           }}
           viewport={{ once: true, amount: "some" }}
-          className={`lg:text-6xl max-w-[80%] py-6 font-Roboto_Condensed font-bold ${robot} md:text-4xl`}
+          className={`text-4xl lg:text-6xl max-w-[80%]  py-6 font-Roboto_Condensed font-bold ${robot} md:text-4xl`}
         >
           <Typewriter
             options={{

@@ -11,9 +11,9 @@ import {os, robot,sofia} from "@/utils/fonts";
 
 export const Left = () => {
   return (
-    <div className="flex flex-row h-screen items-center justify-between lg:mt-32 md:mt-8">
-      <div className="w-[45%] h-[100%] flex flex-col lg:p-32  justify-center md:p-6 ">
-        <div className={`lg:text-6xl max-w-[100%] py-6 font-Roboto_Condensed font-bold ${robot} md:text-4xl`}>
+    <div className="m-0 flex flex-row h-screen items-center justify-between lg:mt-32 md:mt-8">
+      <div className="px-6 md:w-[45%] h-[100%] flex flex-col lg:p-32  justify-center md:p-6 ">
+        <div className={`text-4xl lg:text-6xl max-w-[100%] py-6 font-Roboto_Condensed font-bold ${robot} md:text-4xl`}>
           <motion.div
             initial={{
               opacity: 0,
@@ -144,7 +144,7 @@ export const Left = () => {
           },
         }}
         viewport={{ once: true, amount: "some" }}
-        className="  flex w-[55%]  h-[100%] justify-center  "
+        className="hidden md:flex w-[55%]  h-[100%] justify-center  "
       >
         <Image
           src={banner}

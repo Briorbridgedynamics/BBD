@@ -14,84 +14,84 @@ export const Slider1 = () => {
         <Image
           src={image1}
           alt=""
-          className="h-[150px] max-w-none aspect-[3/2] object-contain"
+          className="h-[80px] md:h-[150px] max-w-none aspect-[3/2] object-contain"
         ></Image>
         <Image
           src={image2}
           alt=""
-          className="h-[150px] max-w-none aspect-[3/2] object-contain"
+          className="h-[80px] md:h-[150px] max-w-none aspect-[3/2] object-contain"
         ></Image>
         <Image
           src={image3}
           alt=""
-          className="h-[150px] max-w-none aspect-[3/2] object-contain"
+          className="h-[80px] md:h-[150px] max-w-none aspect-[3/2] object-contain"
         ></Image>
         <Image
           src={image4}
           alt=""
-          className="h-[150px] max-w-none aspect-[3/2] object-contain"
+          className="h-[80px] md:h-[150px] max-w-none aspect-[3/2] object-contain"
         ></Image>
         <Image
           src={image5}
           alt=""
-          className="h-[150px] max-w-none aspect-[3/2] object-contain"
+          className="h-[80px] md:h-[150px] max-w-none aspect-[3/2] object-contain"
         ></Image>
         <Image
           src={image1}
           alt=""
-          className="h-[150px] max-w-none aspect-[3/2] object-contain"
+          className="h-[80px] md:h-[150px] max-w-none aspect-[3/2] object-contain"
         ></Image>
         <Image
           src={image2}
           alt=""
-          className="h-[150px] max-w-none aspect-[3/2] object-contain"
+          className="h-[80px] md:h-[150px] max-w-none aspect-[3/2] object-contain"
         ></Image>
         <Image
           src={image3}
           alt=""
-          className="h-[150px] max-w-none aspect-[3/2] object-contain"
+          className="h-[80px] md:h-[150px] max-w-none aspect-[3/2] object-contain"
         ></Image>
       </div>
       <div className="flex space-x-16 animate-loop-scroll " aria-hidden="true">
         <Image
           src={image1}
           alt=""
-          className="h-[150px] max-w-none aspect-[3/2] object-contain"
+          className="h-[80px] md:h-[150px] max-w-none aspect-[3/2] object-contain"
         ></Image>
         <Image
           src={image2}
           alt=""
-          className="h-[150px] max-w-none aspect-[3/2] object-contain"
+          className="h-[80px] md:h-[150px] max-w-none aspect-[3/2] object-contain"
         ></Image>
         <Image
           src={image3}
           alt=""
-          className="h-[150px] max-w-none aspect-[3/2] object-contain"
+          className="h-[80px] md:h-[150px] max-w-none aspect-[3/2] object-contain"
         ></Image>
         <Image
           src={image4}
           alt=""
-          className="h-[150px] max-w-none aspect-[3/2] object-contain"
+          className="h-[80px] md:h-[150px] max-w-none aspect-[3/2] object-contain"
         ></Image>
         <Image
           src={image5}
           alt=""
-          className="h-[150px] max-w-none aspect-[3/2] object-contain"
+          className="h-[80px] md:h-[150px] max-w-none aspect-[3/2] object-contain"
         ></Image>
         <Image
           src={image1}
           alt=""
-          className="h-[150px] max-w-none aspect-[3/2] object-contain"
+          className="h-[80px] md:h-[150px] max-w-none aspect-[3/2] object-contain"
         ></Image>
         <Image
           src={image2}
           alt=""
-          className="h-[150px] max-w-none aspect-[3/2] object-contain"
+          className="h-[80px] md:h-[150px] max-w-none aspect-[3/2] object-contain"
         ></Image>
         <Image
           src={image3}
           alt=""
-          className="h-[150px] max-w-none aspect-[3/2] object-contain"
+          className="h-[80px] md:h-[150px] max-w-none aspect-[3/2] object-contain"
         ></Image>
       </div>
     </div>

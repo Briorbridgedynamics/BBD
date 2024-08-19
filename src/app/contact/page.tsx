@@ -132,7 +132,7 @@ export default function Home() {
             }}
           /> */}
         </div>
-        <div className="h-[100%] lg:w-[55%] md:w-[65%] text-primary  font-bold p-2  items-center justify-center">
+        <div className="h-[100%] lg:w-[55%] md:w-[65%] w-[85%] text-primary  font-bold p-2  items-center justify-center">
           {loading == true ? (
             <div className="flex justify-center h-[300px] ">
               <Image
