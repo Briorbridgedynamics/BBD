@@ -29,7 +29,7 @@ export const Left = () => {
                 duration: 1, // Animation duration
               },
             }}
-            viewport={{ once: false, amount: "some" }}
+            viewport={{ once: true, amount: "some" }}
           >
             Ready to
           </motion.div>
@@ -50,7 +50,7 @@ export const Left = () => {
                 delay: 0.4, // Animation duration
               },
             }}
-            viewport={{ once: false, amount: "some" }}
+            viewport={{ once: true, amount: "some" }}
           >
             Dominate?
           </motion.div>
@@ -70,7 +70,7 @@ export const Left = () => {
               delay:0.8 // Animation duration
             },
           }}
-          viewport={{ once: false, amount: "some" }}
+          viewport={{ once: true, amount: "some" }}
           >Let's Scale...</motion.div> */}
           <motion.div 
           initial={{
@@ -115,7 +115,7 @@ export const Left = () => {
               delay: 1.2, // Animation duration
             },
           }}
-          viewport={{ once: false, amount: "some" }}
+          viewport={{ once: true, amount: "some" }}
         >
           A Digital Marketing Company like Brior Bridge Dynamics can help clients in variety of ways, depending on thier specific needs and goals. Here are some key ways in which we can assist companies like building an online presence, Driving targeted traffic, Boosting Brand Awareness, Providing data driven Insights.
         </motion.div>
@@ -134,7 +134,7 @@ export const Left = () => {
               delay: 1.2, // Animation duration
             },
           }}
-          viewport={{ once: false, amount: "some" }}
+          viewport={{ once: true, amount: "some" }}
           className="my-8"
         >
           <Link
@@ -160,7 +160,7 @@ export const Left = () => {
             delay: 0.9, // Animation duration
           },
         }}
-        viewport={{ once: false, amount: "some" }}
+        viewport={{ once: true, amount: "some" }}
         className="  flex w-[55%]  h-[100%] justify-center  "
       >
         <Image

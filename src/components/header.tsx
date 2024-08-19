@@ -54,7 +54,7 @@ export const Header = () => {
           // delay: 0.5,
           // ease: [0, 0.71, 0.2, 1.01],
         }}
-        className="text-[20px] max-w-[100%] text-center"
+        className="text-[20px] max-w-[100%] text-center p-4"
       >
         Your next Gen partner in digital transformation & 
         marketing solutions to elevate your brand.

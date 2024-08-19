@@ -49,7 +49,7 @@ export const Testimonials = () => {
             enabled:true
           }}
          
-          modules={[EffectCoverflow, Pagination,Navigation]}
+          modules={[EffectCoverflow,Navigation]}
           className="mySwiper h-[320px] w-[100%]"
           slideActiveClass="filter-none"
         >

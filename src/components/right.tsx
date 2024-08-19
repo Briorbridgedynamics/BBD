@@ -26,7 +26,7 @@ export const Right = () => {
             duration: 1, // Animation duration
           },
         }}
-        viewport={{ once: false, amount: "some" }}
+        viewport={{ once: true, amount: "some" }}
         className=" flex w-[55%]  h-[100%] justify-center  "
       >
         {/* <Image
@@ -55,7 +55,7 @@ export const Right = () => {
               duration: 1, // Animation duration
             },
           }}
-          viewport={{ once: false, amount: "some" }}
+          viewport={{ once: true, amount: "some" }}
           className={`text-6xl max-w-[80%] py-6 font-Roboto_Condensed font-bold ${robot}`}
         >
           <Typewriter
@@ -83,7 +83,7 @@ export const Right = () => {
               // Animation duration
             },
           }}
-          viewport={{ once: false, amount: "some" }}
+          viewport={{ once: true, amount: "some" }}
         >
           Brior Bridge Dynamics is a digital marketing and web designing company
           that is commited to helping mordern day business, expand their digital
@@ -106,7 +106,7 @@ export const Right = () => {
               duration: 1,
             },
           }}
-          viewport={{ once: false, amount: "some" }}
+          viewport={{ once: true, amount: "some" }}
           className="my-8"
         >
           <Link

@@ -3,8 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import {os, robot,sofia} from "@/utils/fonts";
-
+import { os, robot, sofia } from "@/utils/fonts";
 
 export const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -42,7 +41,7 @@ export const Navbar = () => {
         }
       `}
     >
-      <div className={" flex flex-row h-auto   items-center  text-xl "+robot}>
+      <div className={` flex flex-row h-auto   items-center  text-xl ${robot}`}>
         <div className="h-full ">
           <Link href="/" className="h-[36px] pr-4">
             HOME
@@ -68,16 +67,18 @@ export const Navbar = () => {
         onClick={() => {}}
       >
         <Link
-          href={"/contact"}
-          className={`flex flex-row items-center text-dark text-lg   ${
+          href="/contact"
+          className={` flex flex-row items-center text-dark text-lg   ${
             s ? "text-dark" : "text-primary"
           }`}
         >
           <div className={robot}>LET'S TALK</div>
         </Link>
       </motion.div>
-      <div className="items-center absolute w-[100%]   ">
-        <div className={`flex text-3xl font-bold ${robot} justify-center`}>BBDYNAMICS</div>
+      <div className=" absolute items-center w-auto left-[45%]  ">
+        <div className={`flex text-3xl font-bold ${robot} justify-center`}>
+          BBDYNAMICS
+        </div>
       </div>
     </div>
   );

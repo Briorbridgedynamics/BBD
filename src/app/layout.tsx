@@ -18,10 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="fixed top-0 left-0 right-0   z-50">
+        <div className="fixed top-0 left-0 right-0 z-50">
           <Navbar></Navbar>
         </div>
-        <main className={" bg-primary " }>{children}</main>
+        <main className="bg-primary" >{children}</main>
       </body>
     </html>
   );
