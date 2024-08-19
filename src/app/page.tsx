@@ -15,7 +15,7 @@ import { Header } from "@/components/header";
 import { Left } from "@/components/left";
 import { Right } from "@/components/right";
 import { Clients } from "@/components/clients";
-import {os, robot,sofia} from "@/utils/fonts";
+import { os, robot, sofia } from "@/utils/fonts";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
@@ -28,7 +28,6 @@ import meta from "@/../../public/email.webp";
 import { Testimonials } from "@/components/testimonials";
 
 export default function Home() {
-  
   return (
     <div className="w-full h-auto overflow-hidden snap-y">
       <div className="h-auto   ">
@@ -36,14 +35,14 @@ export default function Home() {
       </div>
       <Left></Left>
       <section id="2">
-
-      <Right ></Right>
+        <Right></Right>
       </section>
-      <Clients></Clients>
-       
+      {/* <Clients></Clients> */}
 
       <div className=" flex items-center justify-center flex-col my-32 overflow-hidden bg-gradient-to-t from-primary via-lightb via-lightb to-primary">
-        <div className={`flex justify-center font-Roboto_Condensed text-8xl w-[50%] text-center ${robot}`}>
+        <div
+          className={`flex justify-center font-Roboto_Condensed text-8xl w-[50%] text-center ${robot}`}
+        >
           Brands we have worked with
         </div>
         <div className="p-2">
