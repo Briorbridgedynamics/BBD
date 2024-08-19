@@ -9,7 +9,7 @@ import {os, robot,sofia} from "@/utils/fonts";
 
 export const Header = () => {
   return (
-    <div className=" justify-center flex flex-col items-center  text-primary  h-[100vh]">
+    <div className=" justify-center flex flex-col items-center  text-primary  h-screen">
       <div className="absolute h-[100%] w-[100%] top-0 left-0 bg-[rgba(0,0,0,0.6)]"></div>
         <video
           className="h-[100%] w-[100%] object-cover"
@@ -19,7 +19,7 @@ export const Header = () => {
         >
           <source src="/background.mp4" type="video/mp4" />
         </video>
-      <div className="absolute text-center w-[100%] h-[100%] top-[200px] left-0">
+      <div className="absolute text-center w-[100%] h-auto top-[200px] left-0">
       <motion.div
         initial={{
           opacity: 0,
@@ -54,7 +54,7 @@ export const Header = () => {
           // delay: 0.5,
           // ease: [0, 0.71, 0.2, 1.01],
         }}
-        className="text-[20px] max-w-[100%] text-center p-4"
+        className="absolute text-[20px] w-[100%] text-center bottom-2"
       >
         Your next Gen partner in digital transformation & 
         marketing solutions to elevate your brand.
