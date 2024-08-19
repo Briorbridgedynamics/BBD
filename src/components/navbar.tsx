@@ -54,11 +54,11 @@ export const Navbar = () => {
           </Link>
         </div>
 
-        <div>
+        {/* <div>
           <Link href={"/"} className=" h-[36px] px-4 ">
             BLOGS
           </Link>
-        </div>
+        </div> */}
       </div>
 
       <motion.div

@@ -1,9 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
-import service from "@/utils/serv";
 import bg from "@/../../public/bg.png";
 import {os, robot,sofia} from "@/utils/fonts";
 
@@ -37,7 +35,9 @@ export const Clients = () => {
               duration: 1,
             //   delay:0.8 // Animation duration
             },
+            
           }}
+          viewport={{ once: true, amount: "some" }}
         className="p-8">
           <Image
             src={bg}
