@@ -10,7 +10,7 @@ import {os, robot,sofia} from "@/utils/fonts";
 
 export const Right = () => {
   return (
-    <div className="flex flex-row h-screen items-center justify-between my-32">
+    <div className="flex flex-row h-screen items-center justify-between my-32" id="about">
       <motion.div
         initial={{
           opacity: 0,
@@ -88,7 +88,7 @@ export const Right = () => {
           Brior Bridge Dynamics is a digital marketing and web designing company
           that is commited to helping mordern day business, expand their digital
           footprints. The team of Brior Bridge Dynamics are passionate about
-          helping business navigate teh complex digital landscape and achieve
+          helping business navigate the complex digital landscape and achieve
           their marketing goals.
         </motion.div>
         <motion.div

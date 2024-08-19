@@ -6,6 +6,17 @@ import { useEffect, useState } from "react";
 import { os, robot, sofia } from "@/utils/fonts";
 
 export const Navbar = () => {
+  function scrollToDiv() {
+    const targetDiv = document.getElementById('about'); 
+  
+    if (targetDiv) {
+      targetDiv.scrollIntoView({ behavior: 'smooth' });
+  
+      
+    } else {
+      console.error('Target div not found.');
+    }
+  }
   const [showNavbar, setShowNavbar] = useState(true);
   const [s, setS] = useState(true);
   useEffect(() => {
@@ -48,7 +59,7 @@ export const Navbar = () => {
           </Link>
         </div>
         <div>
-          <Link href="#2" className=" h-[36px] px-4">
+          <Link href="/" className=" h-[36px] px-4" onClick={scrollToDiv}>
             ABOUT US
           </Link>
         </div>
