@@ -118,7 +118,7 @@ export default function Home() {
       <video className="h-[100%] w-[100%] object-cover" loop autoPlay muted>
         <source src="/contact.mp4" type="video/mp4" />
       </video>
-      <div className=" flex absolute top-auto  h-auto min-h-[600px] w-[50%] bg-[rgba(0,0,0,0.8)] items-center flex-row  flex-col ">
+      <div className=" flex absolute top-auto  h-auto min-h-[600px] lg:w-[50%] md:w-[80%] bg-[rgba(0,0,0,0.8)] items-center flex-row  flex-col ">
         <div className= {`w-[100%] text-primary text-6xl font-bold py-8 px-16 font-R ${sofia}`}>
           Let's
           <br />
@@ -132,7 +132,7 @@ export default function Home() {
             }}
           /> */}
         </div>
-        <div className="h-[100%] w-[55%] text-primary  font-bold p-2  items-center justify-center">
+        <div className="h-[100%] lg:w-[55%] md:w-[65%] text-primary  font-bold p-2  items-center justify-center">
           {loading == true ? (
             <div className="flex justify-center h-[300px] ">
               <Image

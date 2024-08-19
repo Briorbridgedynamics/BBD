@@ -39,9 +39,9 @@ export default function Home() {
       </section>
       {/* <Clients></Clients> */}
 
-      <div className=" flex items-center justify-center flex-col my-32 overflow-hidden bg-gradient-to-t from-primary via-lightb via-lightb to-primary">
+      <div className=" flex items-center justify-center flex-col my-32 overflow-hidden bg-gradient-to-t from-primary via-lightb via-lightb to-primary  ">
         <div
-          className={`flex justify-center font-Roboto_Condensed text-8xl w-[50%] text-center ${robot}`}
+          className={`flex justify-center font-Roboto_Condensed text-8xl lg:w-[50%] text-center ${robot} md:w-[80%]`}
         >
           Brands we have worked with
         </div>

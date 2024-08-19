@@ -4,6 +4,7 @@ import Image from "next/image";
 import im from "@/../../public/UT.png";
 import { motion } from "framer-motion";
 import {os, robot,sofia} from "@/utils/fonts";
+import Link from "next/link";
 
 
 
@@ -19,7 +20,7 @@ export const Header = () => {
         >
           <source src="/background.mp4" type="video/mp4" />
         </video>
-      <div className="absolute text-center w-[100%] h-auto top-[200px] left-0">
+      <div className="absolute top-[35%] text-center w-[100%] h-auto md:top-[25%] left-0">
       <motion.div
         initial={{
           opacity: 0,
@@ -39,10 +40,10 @@ export const Header = () => {
         }}
         viewport={{ once: true, amount: "some" }}
       >
-        <div className={`text-[220px] font-bold  m-0 p-0 h-[170px] text-center ${sofia}`}>
+        <div className={`lg:text-[220px] text-[70px] font-bold  m-0 p-0 lg:h-[170px]  text-center ${sofia} md:text-[13vh] `}>
           YOU DREAM
         </div>
-        <div className={`${sofia} text-[220px] font-bold font-Roboto_Condensed m-0 p-0 text-center`}>
+        <div className={`${sofia} lg:text-[220px] text-[70px] font-bold font-Roboto_Condensed m-0 p-0 text-center md:text-[13vh]`}>
           WE ACCOMPLISH
         </div>
       </motion.div>
@@ -54,12 +55,19 @@ export const Header = () => {
           // delay: 0.5,
           // ease: [0, 0.71, 0.2, 1.01],
         }}
-        className="absolute text-[20px] w-[100%] text-center bottom-2"
+        className="absolute text-sm md:text-[20px] w-[100%] text-center lg:bottom-2 md:w-[80%] md:left-[10%] md:py-4 "
       >
         Your next Gen partner in digital transformation & 
         marketing solutions to elevate your brand.
       </motion.div>
       </div>
+      <Link
+          href="/contact"
+          className={`md:hidden absolute top-[80%]  items-center text-dark md:text-lg text-sm text-dark p-4 rounded-[36px] bg-primary
+          `}
+        >
+          <div className={robot}>LET'S TALK</div>
+      </Link>
     </div>
   );
 };

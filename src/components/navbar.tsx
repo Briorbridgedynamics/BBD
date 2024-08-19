@@ -7,14 +7,12 @@ import { os, robot, sofia } from "@/utils/fonts";
 
 export const Navbar = () => {
   function scrollToDiv() {
-    const targetDiv = document.getElementById('about'); 
-  
+    const targetDiv = document.getElementById("about");
+
     if (targetDiv) {
-      targetDiv.scrollIntoView({ behavior: 'smooth' });
-  
-      
+      targetDiv.scrollIntoView({ behavior: "smooth" });
     } else {
-      console.error('Target div not found.');
+      console.error("Target div not found.");
     }
   }
   const [showNavbar, setShowNavbar] = useState(true);
@@ -52,14 +50,14 @@ export const Navbar = () => {
         }
       `}
     >
-      <div className={` flex flex-row h-auto   items-center  text-xl ${robot}`}>
+      <div className={`hidden  md:flex flex-row h-auto   items-center  md:text-xl text-sm ${robot}`}>
         <div className="h-full ">
-          <Link href="/" className="h-[36px] pr-4">
+          <Link href="/" className="h-[36px] md:pr-4 pr-1">
             HOME
           </Link>
         </div>
         <div>
-          <Link href="/" className=" h-[36px] px-4" onClick={scrollToDiv}>
+          <Link href="/" className=" h-[36px] md:px-4 px-2" onClick={scrollToDiv}>
             ABOUT US
           </Link>
         </div>
@@ -72,22 +70,24 @@ export const Navbar = () => {
       </div>
 
       <motion.div
-        className={`items-center absolute right-8  m-2 w-auto border-2 border-high align-left rounded-[32px] p-2   ${
+        className={`hidden md:block items-center absolute right-1   m-2 w-auto border-2 border-high align-left rounded-[32px] md:p-2 p-[2px] md:right-4   ${
           s ? "bg-primary" : "bg-dark"
         }`}
         onClick={() => {}}
       >
         <Link
           href="/contact"
-          className={` flex flex-row items-center text-dark text-lg   ${
+          className={` flex flex-row items-center text-dark md:text-lg text-sm  ${
             s ? "text-dark" : "text-primary"
           }`}
         >
           <div className={robot}>LET'S TALK</div>
         </Link>
       </motion.div>
-      <div className=" absolute items-center w-auto left-[45%]  ">
-        <div className={`flex text-3xl font-bold ${robot} justify-center`}>
+      <div className=" absolute items-center w-auto lg:left-[45%]  md:left-[41%] left-[35%] ">
+        <div
+          className={`flex lg:text-3xl md:text-3xl text-2xl font-bold ${robot} justify-center`}
+        >
           BBDYNAMICS
         </div>
       </div>

@@ -13,7 +13,7 @@ export const Footer = () => {
     <div className="flex flex-col  h-auto w-full bg-dark  font-Roboto_Condensed pt-8 ">
       <div className=" flex flex-col mt-[50px]  bg-footer rounded-t-[64px]">
         <div
-          className={`max-h-[500px] flex m-0 p-0  ${bebas} text-[50vh] w-[100%] justify-center `}
+          className={`max-h-[500px] flex m-0 p-0  ${bebas} lg:text-[50vh] md:text-[20vh] w-[100%] justify-center `}
         >
           BBDYNAMICS
         </div>

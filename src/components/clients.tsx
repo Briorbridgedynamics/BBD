@@ -9,10 +9,10 @@ import {os, robot,sofia} from "@/utils/fonts";
 export const Clients = () => {
   return (
     <div className=" flex items-center justify-center flex-col my-32">
-        <div className={` flex justify-center  text-8xl ${robot}`}>
+        <div className={` flex justify-center  text-8xl ${robot} `}>
           Meet our Clients
         </div>
-        <div className=" justify-center w-[60%] text-center text-md p-4">
+        <div className=" justify-center w-[60%] text-center text-md p-4 ">
           At Brior Bridge Dynamics, we are pround to partner with diverse range of clients across various industries. Each client bring's us unique challenges and opportunity to craft innovative solutions to achieve greater heights.
           <br />
           <div className={`font-bold text-xl p-4 ${robot}`}>

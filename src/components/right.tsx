@@ -10,7 +10,7 @@ import {os, robot,sofia} from "@/utils/fonts";
 
 export const Right = () => {
   return (
-    <div className="flex flex-row h-screen items-center justify-between my-32" id="about">
+    <div className="flex flex-row h-screen items-center justify-between lg:my-32 md:my-8" id="about">
       <motion.div
         initial={{
           opacity: 0,
@@ -35,11 +35,11 @@ export const Right = () => {
           className="bg-gradient-to-t from-g3 via-g2 to-g1 h-[100%] w-[80%] rounded-[36px] "
         ></Image> */}
 
-        <video className="h-[100%] w-[70%]  object-cover rounded-[50px] max-h-[750px] flex my-auto" loop autoPlay muted>
+        <video className="h-[100%] lg:w-[70%]  object-cover rounded-[50px] lg:max-h-[750px] flex my-auto md:w-[90%] md:max-h-[600px]" loop autoPlay muted>
           <source src="/BD.mp4" type="video/mp4" />
         </video>
       </motion.div>
-      <div className="w-[45%] h-[100%] flex flex-col p-32  justify-center">
+      <div className="w-[45%] h-[100%] flex flex-col lg:p-32  justify-center md:p-6">
         <motion.div
           initial={{
             opacity: 0,
@@ -56,7 +56,7 @@ export const Right = () => {
             },
           }}
           viewport={{ once: true, amount: "some" }}
-          className={`text-6xl max-w-[80%] py-6 font-Roboto_Condensed font-bold ${robot}`}
+          className={`lg:text-6xl max-w-[80%] py-6 font-Roboto_Condensed font-bold ${robot} md:text-4xl`}
         >
           <Typewriter
             options={{

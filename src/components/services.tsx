@@ -10,19 +10,19 @@ import {os, robot,sofia} from "@/utils/fonts";
 export const Services = () => {
   return (
     <div className="flex flex-col  h-auto bg-dark rounded-t-[80px] font-Roboto_Condensed ">
-      <div className={`${robot} py-8 flex items-center text-transparent w-[100%] text-[160px] font-bold justify-center text-center bg-clip-text bg-gradient-to-t from-g4 to-g5`}>
+      <div className={`${robot} py-8 flex items-center text-transparent w-[100%] lg:text-[160px] font-bold justify-center text-center bg-clip-text bg-gradient-to-t from-g4 to-g5 md:text-[120px]`}>
         SERVICE'S WE
         <br />
         OFFER
       </div>
       
-      <div className="grid sm:grid-cols-2 gap-12 m-16">
+      <div className="grid lg:grid-cols-2 md:grid-cols-2 lg:gap-12 md:gap-4 lg:m-16 md:m-4 md:pb-6">
         {service.map((example: any) => {
           return (
             <div>
 
               <motion.div
-                className="flex flex-col h-full w-full bg-card rounded-[42px] items-center justify-between py-8"
+                className="flex flex-col h-full w-full bg-card rounded-[42px] items-center justify-between lg:py-8 md:py-4 "
                 whileHover={{
                   scale: 1.02,
                   boxShadow: "0px 0px 8px #ffe9e5",
@@ -39,10 +39,10 @@ export const Services = () => {
                   <Image
                     src={example.image}
                     alt=""
-                    className="w-auto mx-auto h-[300px]"
+                    className="w-auto mx-auto lg:h-[300px] md:h-[180px]"
                   ></Image>
                 </motion.div>
-                <div className="text-dark font-bold text-[40px] text-center ">
+                <div className="text-dark font-bold lg:text-[40px] md:text-[30px] text-center ">
                   {example.title}
                 </div>
                 <div className="text-dark font-bold text-md p-2  max-w-[500px] flex mx-auto text-center justify-center">

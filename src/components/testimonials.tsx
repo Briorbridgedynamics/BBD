@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import Image from "next/image";
 import quotes from "@/../../public/right-quote.png";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -9,94 +9,122 @@ import {
   Autoplay,
   Navigation,
 } from "swiper/modules";
-import {os, robot,sofia} from "@/utils/fonts";
+import { os, robot, sofia } from "@/utils/fonts";
 
 export const Testimonials = () => {
+  // const size = useWindowSize();
+  // const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+
+  // useLayoutEffect(() => {
+  //   const handleResize = () => {
+  //     setViewportWidth(window.innerWidth);
+  //   };
+
+  //   window.addEventListener("resize", handleResize);
+
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    setWidth(window.innerWidth);
+  }, []);
+
   return (
-    <div className="h-auto w-full bg-gradient-to-t from-primary via-lightb via-lightb to-primary">
-      <div className={`pt-16 flex items-center text-transparent w-[100%] text-[140px] font-bold justify-center text-center bg-clip-text bg-dark ${robot}`}>
+    <div className="flex justify-center flex-col h-screen w-full bg-gradient-to-t from-primary via-lightb via-lightb to-primary">
+      <div
+        className={`pt-16 flex items-center text-transparent w-[100%] lg:text-[140px] font-bold justify-center text-center bg-clip-text bg-dark ${robot} md:text-[120px]`}
+      >
         TESTIMONIALS
       </div>
-      <div className=" flex mx-auto items-center text-transparent w-[60%] justify-center text-center bg-clip-text bg-dark">Let's here what our customer's say about us.</div>
-      <div className=" my-24">
+      <div className=" flex mx-auto items-center text-transparent w-[60%] justify-center text-center bg-clip-text bg-dark">
+        Let's here what our customer's say about us.
+      </div>
+      <div className=" my-24 ">
         <Swiper
           zoom={true}
           initialSlide={3}
-          spaceBetween={130}
+          spaceBetween={width > 900 ? 100 : 30}
           effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
-          slidesPerView={3}
+          slidesPerView={width > 900 ? 3 : 2}
           loop={true}
           // autoplay={{
           //   delay: 1500,
           //   disableOnInteraction: false,
           // }}
-          navigation={
-            {
-              enabled:true
-            }
-          }
+          navigation={{
+            enabled: true,
+          }}
           coverflowEffect={{
             rotate: 0,
             stretch: 0,
             depth: 100,
             modifier: 2,
             slideShadows: false,
-            
           }}
           pagination={{
-            enabled:true
+            enabled: true,
           }}
-         
-          modules={[EffectCoverflow,Navigation]}
-          className="mySwiper h-[320px] w-[100%]"
+          modules={[EffectCoverflow, Navigation]}
+          className="mySwiper lg:h-[320px] w-[100%] md:h-[280px]"
           slideActiveClass="filter-none"
         >
-        
           <SwiperSlide className="relative flex justify-center w-[100%] h-auto bg-center bg-cover shadow-none blur-sm p-8 bg-card rounded-[36px] ">
             <Image
               src={quotes}
               alt=""
-              className="absolute right-5 top-5 h-[60px] w-auto"
+              className="absolute right-5 top-5 lg:h-[60px] md:h-[40px] w-auto"
             ></Image>
-            <div className="w-[100%] h-auto p-2 mt-8">
-            Brior Bridge Dynamics completely transformed our online presence. Their social media campaigns have brought in a steady stream of new customers. We're thrilled with the results and highly recommend their services!
+            <div className="w-[100%] h-auto lg:p-2 lg:mt-8 md:p-0 md:mt-4">
+              Brior Bridge Dynamics completely transformed our online presence.
+              Their social media campaigns have brought in a steady stream of
+              new customers. We're thrilled with the results and highly
+              recommend their services!
             </div>
             <div className="absolute right-10 bottom-10 text-end font-bold">
-            - Rituja Saha,
-            <br />
-            Batters 'N' Platters
+              - Rituja Saha,
+              <br />
+              Batters 'N' Platters
             </div>
           </SwiperSlide>
           <SwiperSlide className="relative flex justify-center w-[100%] h-auto bg-center bg-cover shadow-none blur-sm p-8 bg-card rounded-[36px] ">
             <Image
               src={quotes}
               alt=""
-              className="absolute right-5 top-5 h-[60px] w-auto"
+              className="absolute right-5 top-5 lg:h-[60px] md:h-[40px] w-auto"
             ></Image>
-            <div className="w-[100%] h-auto p-2 mt-8">
-            We were skeptical about investing in digital marketing, but Brior Bridge Dynamics proved us wrong. Their campaigns have generated a fantastic ROI, and we've seen a direct impact on our bottom line. We're extremely satisfied with their performance.
+            <div className="w-[100%] h-auto lg:p-2 lg:mt-8 md:p-0 md:mt-4">
+              We were skeptical about investing in digital marketing, but Brior
+              Bridge Dynamics proved us wrong. Their campaigns have generated a
+              fantastic ROI, and we've seen a direct impact on our bottom line.
+              We're extremely satisfied with their performance.
             </div>
             <div className="absolute right-10 bottom-10 text-end font-bold">
-            - Abhimanyu Saha & Vishal Bhadra, 
-            <br />
-            Aesthetic Hutch
+              - Abhimanyu Saha & Vishal Bhadra,
+              <br />
+              Aesthetic Hutch
             </div>
           </SwiperSlide>
           <SwiperSlide className="relative flex justify-center w-[100%] h-auto bg-center bg-cover shadow-none blur-sm p-8 bg-card rounded-[36px] ">
             <Image
               src={quotes}
               alt=""
-              className="absolute right-5 top-5 h-[60px] w-auto"
+              className="absolute right-5 top-5 lg:h-[60px] md:h-[40px] w-auto"
             ></Image>
-            <div className="w-[100%] h-auto p-2 mt-8">
-            The team at Brior Bridge Dynamics is not only incredibly talented but also genuinely cares about our success. They're always available to answer our questions and provide guidance. Their dedication to their clients is unmatched.
+            <div className="w-[100%] h-auto lg:p-2 lg:mt-8 md:p-0 md:mt-4">
+              The team at Brior Bridge Dynamics is not only incredibly talented
+              but also genuinely cares about our success. They're always
+              available to answer our questions and provide guidance. Their
+              dedication to their clients is unmatched.
             </div>
             <div className="absolute right-10 bottom-10 text-end font-bold">
-            - Debashish Das,
-            <br />
-            Ultimate Fitness Studio
+              - Debashish Das,
+              <br />
+              Ultimate Fitness Studio
             </div>
           </SwiperSlide>
 
@@ -104,50 +132,62 @@ export const Testimonials = () => {
             <Image
               src={quotes}
               alt=""
-              className="absolute right-5 top-5 h-[60px] w-auto"
+              className="absolute right-5 top-5 lg:h-[60px] md:h-[40px] w-auto"
             ></Image>
-            <div className="w-[100%] h-auto p-2 mt-8">
-            Brior Bridge Dynamics has been instrumental in helping us maintain our market leadership. Their expertise in e-commerce marketing has driven significant sales growth, and their customer service is second to none. We're confident in their ability to deliver results.
+            <div className="w-[100%] h-auto lg:p-2 lg:mt-8 md:p-0 md:mt-4">
+              Brior Bridge Dynamics has been instrumental in helping us maintain
+              our market leadership. Their expertise in e-commerce marketing has
+              driven significant sales growth, and their customer service is
+              second to none. We're confident in their ability to deliver
+              results.
             </div>
             <div className="absolute right-10 bottom-10 text-end font-bold">
-            - Anil Tiwari,
-            <br />
-            Kolmin Healthcare
+              - Anil Tiwari,
+              <br />
+              Kolmin Healthcare
             </div>
           </SwiperSlide>
           <SwiperSlide className="relative flex justify-center w-[100%] h-auto bg-center bg-cover shadow-none blur-sm p-8 bg-card rounded-[36px] ">
             <Image
               src={quotes}
               alt=""
-              className="absolute right-5 top-5 h-[60px] w-auto"
+              className="absolute right-5 top-5 lg:h-[60px] md:h-[40px] w-auto"
             ></Image>
-            <div className="w-[100%] h-auto p-2 mt-8">
-            We were skeptical about investing in digital marketing, but Brior Bridge Dynamics proved us wrong. Their campaigns have generated a fantastic ROI, and we've seen a direct impact on our bottom line. We're extremely satisfied with their performance.
+            <div className="w-[100%] h-auto lg:p-2 lg:mt-8 md:p-0 md:mt-4">
+              We were skeptical about investing in digital marketing, but Brior
+              Bridge Dynamics proved us wrong. Their campaigns have generated a
+              fantastic ROI, and we've seen a direct impact on our bottom line.
+              We're extremely satisfied with their performance.
             </div>
             <div className="absolute right-10 bottom-10 text-end font-bold">
-            - Abhimanyu Saha & Vishal Bhadra, 
-            <br />
-            Aesthetic Hutch
+              - Abhimanyu Saha & Vishal Bhadra,
+              <br />
+              Aesthetic Hutch
             </div>
           </SwiperSlide>
           <SwiperSlide className="relative flex justify-center w-[100%] h-auto bg-center bg-cover shadow-none blur-sm p-8 bg-card rounded-[36px] ">
             <Image
               src={quotes}
               alt=""
-              className="absolute right-5 top-5 h-[60px] w-auto"
+              className="absolute right-5 top-5 lg:h-[60px] md:h-[40px] w-auto"
             ></Image>
-            <div className="w-[100%] h-auto p-2 mt-8">
-            The team at Brior Bridge Dynamics is not only incredibly talented but also genuinely cares about our success. They're always available to answer our questions and provide guidance. Their dedication to their clients is unmatched.
+            <div className="w-[100%] h-auto lg:p-2 lg:mt-8 md:p-0 md:mt-4">
+              The team at Brior Bridge Dynamics is not only incredibly talented
+              but also genuinely cares about our success. They're always
+              available to answer our questions and provide guidance. Their
+              dedication to their clients is unmatched.
             </div>
             <div className="absolute right-10 bottom-10 text-end font-bold">
-            - Debashish Das,
-            <br />
-            Ultimate Fitness Studio
+              - Debashish Das,
+              <br />
+              Ultimate Fitness Studio
             </div>
           </SwiperSlide>
-          
         </Swiper>
       </div>
     </div>
   );
 };
+function useWindowSize() {
+  throw new Error("Function not implemented.");
+}

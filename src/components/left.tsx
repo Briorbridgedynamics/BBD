@@ -11,9 +11,9 @@ import {os, robot,sofia} from "@/utils/fonts";
 
 export const Left = () => {
   return (
-    <div className="flex flex-row h-screen items-center justify-between mt-32">
-      <div className="w-[45%] h-[100%] flex flex-col p-32  justify-center">
-        <div className={`text-6xl max-w-[100%] py-6 font-Roboto_Condensed font-bold ${robot}`}>
+    <div className="flex flex-row h-screen items-center justify-between lg:mt-32 md:mt-8">
+      <div className="w-[45%] h-[100%] flex flex-col lg:p-32  justify-center md:p-6 ">
+        <div className={`lg:text-6xl max-w-[100%] py-6 font-Roboto_Condensed font-bold ${robot} md:text-4xl`}>
           <motion.div
             initial={{
               opacity: 0,
@@ -54,24 +54,7 @@ export const Left = () => {
           >
             Dominate?
           </motion.div>
-          {/* <motion.div
-          initial={{
-            opacity: 0,
-            // if odd index card,slide from right instead of left
-            x: -200,
-          }}
-          whileInView={{
-            opacity: 1,
-            x: 0,
-            y: 0, // Slide in to its original position
-            transition: {
-              stiffness: 200,
-              duration: 1,
-              delay:0.8 // Animation duration
-            },
-          }}
-          viewport={{ once: true, amount: "some" }}
-          >Let's Scale...</motion.div> */}
+        
           <motion.div 
           initial={{
             opacity: 0,
@@ -166,7 +149,7 @@ export const Left = () => {
         <Image
           src={banner}
           alt="x"
-          className="flex my-auto bg-gradient-to-t from-g5 via-g4 to-g3 h-[100%] w-[70%] rounded-[50px] object-cover max-h-[750px]"
+          className="flex my-auto bg-gradient-to-t from-g5 via-g4 to-g3 lh-[100%] lg:w-[70%] rounded-[50px] object-cover lg:max-h-[750px] md:w-[90%] md:max-h-[600px]"
         ></Image>
       </motion.div>
     </div>
