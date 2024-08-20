@@ -5,6 +5,7 @@ import image2 from "./../../public/logo/logo1.png";
 import image3 from "./../../public/logo/logo4.png";
 import image4 from "./../../public/cake1.png";
 import image5 from "./../../public/logo/DD.png";
+import image6 from "./../../public/logo/x.png"
 
 export const Slider2 = () => {
   return (
@@ -36,7 +37,7 @@ export const Slider2 = () => {
           className="h-[80px] md:h-[150px] max-w-none aspect-[3/2] object-contain"
         ></Image>
         <Image
-          src={image1}
+          src={image6}
           alt=""
           className="h-[80px] md:h-[150px] max-w-none aspect-[3/2] object-contain"
         ></Image>
@@ -81,7 +82,7 @@ export const Slider2 = () => {
           className="h-[80px] md:h-[150px] max-w-none aspect-[3/2] object-contain"
         ></Image>
         <Image
-          src={image1}
+          src={image6}
           alt=""
           className="h-[80px] md:h-[150px] max-w-none aspect-[3/2] object-contain"
         ></Image>
