@@ -37,7 +37,7 @@ export default function Home() {
       <section id="2">
         <Right></Right>
       </section>
-      {/* <Clients></Clients> */}
+      <Clients></Clients>
 
       <div className=" flex items-center justify-center flex-col my-32 overflow-hidden bg-gradient-to-t from-primary via-lightb via-lightb to-primary  ">
         <div
