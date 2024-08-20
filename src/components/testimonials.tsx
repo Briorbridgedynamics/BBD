@@ -12,20 +12,6 @@ import {
 import { os, robot, sofia } from "@/utils/fonts";
 
 export const Testimonials = () => {
-  // const size = useWindowSize();
-  // const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
-
-  // useLayoutEffect(() => {
-  //   const handleResize = () => {
-  //     setViewportWidth(window.innerWidth);
-  //   };
-
-  //   window.addEventListener("resize", handleResize);
-
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, []);
   const [width, setWidth] = useState(0);
 
   useEffect(() => {
