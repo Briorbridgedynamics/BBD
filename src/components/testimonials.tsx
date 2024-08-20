@@ -194,6 +194,4 @@ export const Testimonials = () => {
     </div>
   );
 };
-function useWindowSize() {
-  throw new Error("Function not implemented.");
-}
+
