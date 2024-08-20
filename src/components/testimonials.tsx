@@ -39,7 +39,7 @@ export const Testimonials = () => {
               grabCursor={true}
               centeredSlides={true}
               // slidesPerView={width > 900 ? 3 : (width>400?2:1)}
-              slidesPerView={2}
+              slidesPerView={3}
               loop={true}
               // autoplay={{
               //   delay: 1500,
