@@ -9,7 +9,7 @@ export const Promises = () => {
   return (
     <div className="flex flex-col h-auto bg-dark  font-Roboto_Condensed md:pb-32 pb-8">
       <div
-        className={`lg:py-16 md:py-6 flex items-center text-transparent w-[100%] text-6xl font-bold justify-center text-center bg-clip-text bg-gradient-to-t from-g6 to-g5 py-8 ${robot}`}
+        className={`py-[30px] md:py-[50px] lg:py-[100px]  flex items-center text-transparent w-[100%] text-4xl md:text-[140px] font-bold justify-center text-center bg-clip-text bg-gradient-to-t from-g6 to-g5  ${robot}`}
       >
         OUR PROMISE'S
       </div>
@@ -19,13 +19,13 @@ export const Promises = () => {
             <Image
               src={DM}
               alt=""
-              className="w-auto mx-auto h-[300px] rounded-xl m-4"
+              className="w-auto mx-auto lg:h-[300px] md:h-[180px] h-[150px] rounded-xl m-4"
             ></Image>
           </div>
           <div className="text-dark text-xl font-bold lg:text-[40px] md:text-[30px]  text-center">
             Privacy & Security
           </div>
-          <div className="text-dark  text-lg text-center lg:p-6 md:p-4 lg:w-[70%] md:w-[90%] h-[30%] ">
+          <div className="text-dark  text-sm md:text-lg text-center lg:p-6 md:p-4 lg:w-[70%] md:w-[90%] h-[30%] ">
             Your data, our utmost priority. Experience digital safety with us.
             We safeguard your information with cutting-edge security protocols.
           </div>
@@ -35,13 +35,13 @@ export const Promises = () => {
             <Image
               src={PR}
               alt=""
-              className="w-auto mx-auto h-[300px] rounded-xl m-4"
+              className="w-auto mx-auto lg:h-[300px] md:h-[180px] h-[150px] rounded-xl m-4"
             ></Image>
           </div>
           <div className="text-dark text-xl font-bold lg:text-[40px] md:text-[30px] text-center">
             Exponential Growth
           </div>
-          <div className="text-dark  text-lg text-center lg:p-6 md:p-4 lg:w-[70%] md:w-[90%] h-[30%]">
+          <div className="text-dark  text-sm md:text-lg text-center lg:p-6 md:p-4 lg:w-[70%] md:w-[90%] h-[30%]">
             Skyrocket your business with our strategies. Unleash your brand's
             potential for exponential growth.
           </div>
@@ -52,7 +52,7 @@ export const Promises = () => {
           <div className="text-dark font-bold text-xl lg:text-[40px] md:text-[30px]  text-center">
             Customer Satisfaction
           </div>
-          <div className="w-[90%] text-dark  text-lg text-center p-2 mt-2 md:p-6 lg:w-[70%] md:w-[90%] mx-auto ">
+          <div className="w-[90%] text-dark text-sm md:text-lg text-center p-2 mt-2 md:p-6 lg:w-[70%] md:w-[90%] mx-auto ">
             Client satisfaction is our unwavering commitment. Your success is
             our ultimate goal. Let’s collaborate to build a brand that
             resonates. Together, we’ll create a digital footprint that lasts.
@@ -62,7 +62,7 @@ export const Promises = () => {
           <Image
             src={CS}
             alt=""
-            className="w-auto mx-auto md:h-[300px] rounded-xl m-4"
+            className="w-auto mx-auto lg:h-[300px] md:h-[180px] h-[150px]rounded-xl m-4"
           ></Image>
         </div>
       </div>

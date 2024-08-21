@@ -8,8 +8,8 @@ import {os, robot,sofia} from "@/utils/fonts";
 
 export const Clients = () => {
   return (
-    <div className=" flex items-center justify-center flex-col my-32">
-        <div className={` flex justify-center text-6xl md:text-8xl ${robot} `}>
+    <div className=" flex max-h-screen items-center justify-center flex-col md:my-64 my-32 ">
+        <div className={` flex items-center justify-center text-4xl md:text-8xl ${robot} `}>
           Meet our Clients
         </div>
         <div className=" justify-center md:w-[60%] w-[90%] text-center text-md p-4 ">

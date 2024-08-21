@@ -23,7 +23,7 @@ export const Testimonials = () => {
       {width > 600 ? (
         <div>
           <div
-            className={`text-6xl pt-16 flex items-center text-transparent w-[100%] lg:text-[140px] font-bold justify-center text-center bg-clip-text bg-dark ${robot} md:text-[120px]`}
+            className={`text-5xl pt-16 flex items-center text-transparent w-[100%] lg:text-[140px] font-bold justify-center text-center bg-clip-text bg-dark ${robot} md:text-[120px]`}
           >
             TESTIMONIALS
           </div>
@@ -180,4 +180,3 @@ export const Testimonials = () => {
     </div>
   );
 };
-

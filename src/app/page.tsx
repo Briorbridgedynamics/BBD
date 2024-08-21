@@ -41,11 +41,11 @@ export default function Home() {
 
       <div className=" flex items-center justify-center flex-col my-32 overflow-hidden bg-gradient-to-t from-primary via-lightb via-lightb to-primary  ">
         <div
-          className={`flex justify-center font-Roboto_Condensed text-6xl md:text-8xl lg:w-[50%] text-center ${robot} md:w-[80%]`}
+          className={`flex justify-center font-Roboto_Condensed text-4xl md:text-8xl lg:w-[50%] text-center ${robot} md:w-[80%]`}
         >
           Brands we have worked with
         </div>
-        <div className=" p-2 text-center">
+        <div className=" p-2 text-center w-[80%] text-sm md:text-lg">
           And way more – we’re adding new ones all the time.
         </div>
         <div className="mt-16 ">

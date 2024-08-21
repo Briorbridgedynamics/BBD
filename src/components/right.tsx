@@ -10,7 +10,7 @@ import {os, robot,sofia} from "@/utils/fonts";
 
 export const Right = () => {
   return (
-    <div className="flex flex-col md:flex-row h-screen items-center justify-between lg:my-32 md:my-8" id="about">
+    <div className="flex flex-col md:flex-row h-auto min-h-screen items-center justify-between lg:my-32 md:my-8" id="about">
       <motion.div
         initial={{
           opacity: 0,
