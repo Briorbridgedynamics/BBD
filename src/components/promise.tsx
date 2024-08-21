@@ -9,7 +9,7 @@ export const Promises = () => {
   return (
     <div className="flex flex-col h-auto bg-dark  font-Roboto_Condensed md:pb-32 pb-8">
       <div
-        className={`py-[30px] md:py-[50px] lg:py-[100px]  flex items-center text-transparent w-[100%] text-4xl md:text-[140px] font-bold justify-center text-center bg-clip-text bg-gradient-to-t from-g6 to-g5  ${robot}`}
+        className={`py-[30px] md:py-[50px] lg:py-[100px] h-[100%]  flex  items-center text-transparent w-[100%] text-4xl md:text-[100px] lg:text-[140px] font-bold justify-center text-center bg-clip-text bg-gradient-to-t from-g6 to-g5  ${robot} `}
       >
         OUR PROMISE'S
       </div>
