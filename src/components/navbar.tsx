@@ -16,6 +16,7 @@ export const Navbar = () => {
     }
   }
   const [showNavbar, setShowNavbar] = useState(true);
+  const [inConatct, setInContact] = useState(false);
   const [s, setS] = useState(true);
   useEffect(() => {
     let lastScrollY = window.scrollY;
@@ -40,6 +41,12 @@ export const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  useEffect(()=>{
+    const url=window.location.href;
+    // alert(url);
+
+  },[])
+  
 
   return (
     <div
@@ -51,38 +58,62 @@ export const Navbar = () => {
       `}
     >
       <div className={`hidden  md:flex flex-row h-auto   items-center  md:text-xl text-sm ${robot}`}>
+      {
+         inConatct==true?
+         <div></div>:
         <div className="h-full ">
           <Link href="/" className="h-[36px] md:pr-4 pr-1">
             HOME
           </Link>
         </div>
+      }
+        {
+         inConatct==true?<div></div>: 
         <div>
           <Link href="/" className=" h-[36px] md:px-4 px-2" onClick={scrollToDiv}>
             ABOUT US
           </Link>
         </div>
-
+        }
         {/* <div>
           <Link href={"/"} className=" h-[36px] px-4 ">
             BLOGS
           </Link>
         </div> */}
       </div>
-
+      
       <motion.div
-        className={`hidden md:block items-center absolute right-1   m-2 w-auto border-2 border-high align-left rounded-[32px] md:p-2 p-[2px] md:right-4   ${
+        className={`hidden md:block items-center absolute right-1  top-2  m-2 w-auto border-2 border-high align-left rounded-[32px] md:p-2 p-[2px] md:right-4   ${
           s ? "bg-primary" : "bg-dark"
         }`}
         onClick={() => {}}
-      >
+      >  
+         {
+         inConatct==true?
+         <Link
+          href="/"
+          className={` flex flex-row items-center text-dark md:text-lg text-sm min-w-[50px]  justify-center  ${
+            s ? "text-dark" : "text-primary"
+          }`} 
+          onClick={()=>{
+            setInContact(false);
+          }}
+        >
+          <div className={robot}>BACK</div>
+        </Link>
+         : 
         <Link
           href="/contact"
           className={` flex flex-row items-center text-dark md:text-lg text-sm  ${
             s ? "text-dark" : "text-primary"
-          }`}
+          }`} 
+          onClick={()=>{
+            setInContact(true);
+          }}
         >
           <div className={robot}>LET'S TALK</div>
         </Link>
+        }
       </motion.div>
       <div className="flex mx-auto md:mx-0  md:absolute items-center md:w-auto lg:left-[45%]  md:left-[41%] left-[35%] ">
         <div
