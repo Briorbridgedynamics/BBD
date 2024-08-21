@@ -182,7 +182,7 @@ export default function Home() {
                   name="colors"
                   options={options}
                   className=" bg-transparent peer h-auto w-full border-b-2 border-gray-700 text-primary placeholder-gray-500 focus:outline-none focus:border-gray-300 basic-multi-select"
-                  classNamePrefix="select"
+                  classNamePrefix="Services"
                   styles={colourStyles}
                   theme={(theme) => ({
                     ...theme,
@@ -206,6 +206,7 @@ export default function Home() {
                     // console.log(temp);
                     setService(temp);
                   }}
+                  placeholder="Services.."
                 />
               </div>
               <div className="p-2 ">
