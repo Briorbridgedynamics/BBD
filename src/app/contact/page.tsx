@@ -163,7 +163,7 @@ export default function Home() {
                   type="text"
                   value={business}
                   className=" bg-transparent peer h-10 w-full border-b-2 border-gray-700 text-primary placeholder-gray-500 focus:outline-none focus:border-gray-300"
-                  placeholder="Buiseness Info"
+                  placeholder="Buisness Info"
                   onChange={(event) => {
                     setBusiness(event.target.value);
                   }}
