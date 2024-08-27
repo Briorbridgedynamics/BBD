@@ -17,6 +17,7 @@ export const Header = () => {
           loop
           autoPlay
           muted
+          webkit-playsinline playsInline={true}
         >
           <source src="/background.mp4" type="video/mp4" />
         </video>
