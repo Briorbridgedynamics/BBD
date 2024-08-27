@@ -115,7 +115,7 @@ export default function Home() {
   return (
     <div className="flex w-full h-[100vh] overflow-hidden p-0 m-0 items-center justify-center">
       <div className="absolute h-screen w-[100%] top-0 left-0 bg-[rgba(0,0,0,0.3)] p-0 m-0"></div>
-      <video className="h-[100%] w-[100%] object-cover" loop autoPlay muted webkit-playsinline >
+      <video className="h-[100%] w-[100%] object-cover" loop autoPlay muted webkit-playsinline playsInline={true}>
         <source src="/contact.mp4" type="video/mp4" />
       </video>
       <div className=" flex absolute top-auto  h-auto min-h-[600px] lg:w-[50%] md:w-[80%] bg-[rgba(0,0,0,0.8)] items-center flex-row  flex-col ">
