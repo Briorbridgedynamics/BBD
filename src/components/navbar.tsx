@@ -4,12 +4,11 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { Suspense, useEffect, useState } from "react";
 import { os, robot, sofia } from "@/utils/fonts";
-import { usePathname, useSearchParams } from 'next/navigation'
+import { usePathname } from 'next/navigation'
 
 
 export const Navbar = () => {
   const pathname = usePathname() 
-  const searchParams = useSearchParams()
   useEffect(() => {
     // console.log(pathname)
     if(pathname=='/'){
@@ -17,7 +16,7 @@ export const Navbar = () => {
     }
     else
     setInContact(true)
-  }, [pathname, searchParams])
+  }, [pathname])
 
   function scrollToDiv() {
     const targetDiv = document.getElementById("about");
