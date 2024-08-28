@@ -61,7 +61,7 @@ export const Navbar = () => {
   
   
   return (
-    <Suspense>{
+    <Suspense fallback={<div>Loading...</div>}>{
     <div
       className={`flex flex-row h-auto 
         ${s ? "bg-transparent text-primary" : "bg-primary-t text-dark"}
