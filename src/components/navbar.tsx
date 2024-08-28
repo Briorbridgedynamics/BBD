@@ -60,7 +60,7 @@ export const Navbar = () => {
   
   
   return (
-    <Suspense fallback={<div>Loading...</div>}>{
+    
     <div
       className={`flex flex-row h-auto 
         ${s ? "bg-transparent text-primary" : "bg-primary-t text-dark"}
@@ -134,7 +134,7 @@ export const Navbar = () => {
           BBDYNAMICS
         </div>
       </div>
-    </div>}
-    </Suspense>
+    </div>
+    
   );
 };
