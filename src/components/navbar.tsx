@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { os, robot, sofia } from "@/utils/fonts";
 import { usePathname, useSearchParams } from 'next/navigation'
 
@@ -61,6 +61,7 @@ export const Navbar = () => {
   
   
   return (
+    <Suspense>{
     <div
       className={`flex flex-row h-auto 
         ${s ? "bg-transparent text-primary" : "bg-primary-t text-dark"}
@@ -134,6 +135,7 @@ export const Navbar = () => {
           BBDYNAMICS
         </div>
       </div>
-    </div>
+    </div>}
+    </Suspense>
   );
 };
