@@ -1,11 +1,24 @@
-"use client";
+'use client';
 
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { os, robot, sofia } from "@/utils/fonts";
+import { usePathname, useSearchParams } from 'next/navigation'
+
 
 export const Navbar = () => {
+  const pathname = usePathname() 
+  const searchParams = useSearchParams()
+  useEffect(() => {
+    // console.log(pathname)
+    if(pathname=='/'){
+      setInContact(false)
+    }
+    else
+    setInContact(true)
+  }, [pathname, searchParams])
+
   function scrollToDiv() {
     const targetDiv = document.getElementById("about");
 
@@ -42,12 +55,11 @@ export const Navbar = () => {
     };
   }, []);
   useEffect(()=>{
-    const url=window.location.href;
-    // alert(url);
+    
 
   },[])
   
-
+  
   return (
     <div
       className={`flex flex-row h-auto 
