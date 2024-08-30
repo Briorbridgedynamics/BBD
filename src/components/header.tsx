@@ -58,8 +58,8 @@ export const Header = () => {
         }}
         className="absolute text-sm md:text-[20px] w-[100%] text-center lg:bottom-2 md:w-[80%] md:left-[10%] md:py-4 "
       >
-        Your next Gen partner in digital transformation & 
-        marketing solutions to elevate your brand.
+        Your Next Gen Partner in Digital Transformation & 
+        Marketing Solutions to Elevate your Brand.
       </motion.div>
       </div>
       <Link

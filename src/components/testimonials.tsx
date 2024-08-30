@@ -28,7 +28,7 @@ export const Testimonials = () => {
             TESTIMONIALS
           </div>
           <div className=" flex mx-auto items-center text-transparent w-[60%] justify-center text-center bg-clip-text bg-dark p-2">
-            Let's here what our customer's say about us.
+            Let's hear what our customer's say about us.
           </div>
           <div className=" my-24 ">
             <Swiper
