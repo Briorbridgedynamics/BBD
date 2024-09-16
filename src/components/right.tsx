@@ -35,7 +35,10 @@ export const Right = () => {
           className="bg-gradient-to-t from-g3 via-g2 to-g1 h-[100%] w-[80%] rounded-[36px] "
         ></Image> */}
 
-        <video className="h-[100%] lg:w-[70%]  object-cover rounded-[50px] lg:max-h-[750px] flex my-auto md:w-[90%] md:max-h-[600px]" loop autoPlay muted>
+        <video className="h-[100%] lg:w-[70%]  object-cover rounded-[50px] lg:max-h-[750px] flex my-auto md:w-[90%] md:max-h-[600px]" 
+        loop autoPlay muted
+        webkit-playsinline playsInline={true}
+        >
           <source src="/BD.mp4" type="video/mp4" />
         </video>
       </motion.div>

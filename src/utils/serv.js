@@ -30,7 +30,7 @@ var service = [
     },
     {
         title:"Search Engine Optimization",
-        body:"Jump up the ranks with out next gen Optimiztions.",
+        body:"Jump up the ranks with out next gen Optimizations.",
         image: SEO
         
     },
